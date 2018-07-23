@@ -20,10 +20,13 @@ header, section {
 }
 .header-container{
     max-width: 80%;
+    /*max-height: 640px;*/
     margin: 0 auto;
     display: flex;
     justify-content:space-between;
     background: #fbd5c8;
+    flex-direction: column;
+
     /*padding: 20px 0px;*/
 }
 .header-container a{
@@ -44,35 +47,169 @@ header, section {
 ul{
     display: flex;
 }
+.main-menu li:last-child{
+    padding-bottom: 10px;
+}
 nav{
-    margin-top: 45px;
+    margin-top: 10px;
+
 }
 
-.logo{
-    width: 200px;
-margin-left: 10px;
-}
+
 .logo svg{
     width: 80%;
     height:80%;
     margin-top: 15px;
     /*margin-left: 30px;*/
 }
+.logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 20px;
+
+
+}
+label{
+    display: flex;
+   justify-content: center;
+    flex-direction: row;
+
+}
+.menu{
+    max-width: 9%;
+    padding-right: 10px;
+}
+
+label[data-open='MENU']{
+   align-items: center;
+}
+
+.header-slogan{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: flex-end;*/
+    padding: 15px 20px;
+}
+
+.header-slogan h1,h2{
+    color: #394a5a;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/*button*/
+
+.round
+{
+    /*max-width: 960px;*/
+    margin:0 auto;
+}
+
+.round a {
+    color: #394a5a;
+}
+
+
+.round p {
+    color: #394a5a;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.round .button {
+    display: block;
+    width: 230px;
+    height: 30px;
+    line-height: 34px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #394a5a;
+    transition: color .5s;
+}
+
+.round .button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #394a5a;
+    height:150px;
+    width: 200px;
+    border-radius: 100%;
+}
+
+.round .button:hover {
+    color: #394a5a;
+}
+
+.round .button:nth-child(1):before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+.round .button:nth-child(1):hover:before {
+    top: -100px;
+    left: -100px;
+}
+
+.round .button:nth-child(2):before {
+    left: -80px;
+    bottom: 100%;
+    transition: all .7s;
+}
+
+.round .button:nth-child(2):hover:before {
+    bottom: -10px;
+}
+
+.round .button:nth-child(3):before {
+    top: 0;
+    left: -800%;
+    transition: all .7s;
+}
+
+.round .button:nth-child(3):hover:before {
+    top: -80px;
+    left: -80px;
+}
+
+
+
+
 .social{
     display: flex;
-    max-width: 80%;
+    /*max-width: 50%;*/
 
-    flex-direction: row;
-    justify-content: space-between;
+    /*flex-direction: row;*/
+    /*justify-content: center;*/
 }
-.menu_social li{
-    margin-right: 15px;
+
+.social ul {
+    display: flex;
+    /*width: 50%;*/
+    /*height: 50%;*/
+    justify-content: center;
 }
+
 .menu_social li:last-child{
     margin-right: 0;
 }
 .social ul{
+
     padding:5px 20px;
+    margin: 0 auto;
+
+}
+.social-block img{
+    width: 40%;
+    height: 100%;
 }
 
 .menu_contact p{
@@ -183,10 +320,12 @@ display: flex;
     background: #394a5a;
     display: flex;
     justify-content: center;
+    padding: 20px 0px;
 }
-.bottom-card p{
+.bottom-card a{
     color: #fbd5c8;
-    font-size: 18px;
+    font-size: 14px;
+
 }
 .first-p{
     padding: 10px 0;
@@ -469,7 +608,7 @@ display: flex;
     .header-container {
         max-width: 80%;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .logo {
@@ -477,7 +616,7 @@ display: flex;
         width: 100%;
         justify-content: center;
         margin: 0 auto;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
 
     }
 
@@ -607,15 +746,17 @@ display: flex;
       margin: 0 auto;
 
     }
-    .toggle-button{
-        text-align: center;
-        display: block;
-        cursor:pointer;
-        color: #000;
-    }
+    /*.toggle-button{*/
+        /*text-align: center;*/
+
+        /*cursor:pointer;*/
+        /*color: #000;*/
+    /*}*/
     .toggle-button:after{
         content: attr(data-open);
         display: block;
+        color: #394a5a;
+      font-weight: 600;
     }
     #menu-checkbox:checked + nav[role="navigation"] .main-menu{
         display: block;
