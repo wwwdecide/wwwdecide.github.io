@@ -79,7 +79,7 @@ label[data-open='MENU']{
 .header-slogan{
     display: flex;
     flex-direction: column;
-    padding: 53px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 .header-slogans {
     padding-bottom: 53px;
@@ -98,16 +98,7 @@ label[data-open='MENU']{
     font-size: 12px;
     letter-spacing: 2px;
 }
-.round_phone{
-	display:flex;
-    max-width: 70%;
-	width: 230px;
-    height: 15px;
 
-    margin-top: 40px;
-
-    
-}
 .round_phone p{
 		display:flex;
     font-size: 14px;
@@ -915,7 +906,13 @@ label{
 
 }
     .round_phone{
-        margin: 70px auto 5px;
+        display: flex;
+        max-width: 100%;
+        margin: 42px auto;
+        margin-bottom: 0px;
+    }
+    .round_phone p{
+max-width: 100%;
     }
     .social {
         margin: 0px auto;
