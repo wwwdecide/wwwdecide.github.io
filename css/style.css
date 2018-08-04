@@ -101,7 +101,7 @@ label[data-open='MENU']{
 .round_phone{
 	display:flex;
     max-width: 70%;
-	width: 200px;
+	width: 230px;
     height: 15px;
 
     margin-top: 40px;
@@ -667,6 +667,7 @@ display:flex;
     text-align:right;
     height: 20px;
     line-height:20px;
+    color: #dddddd;
 }
 .footer-adress img{
 
@@ -698,7 +699,7 @@ line-height: 12px;
 .topbutton span{
    position: absolute;
     bottom: 0px;
-    right: 7px;
+    right: 9px;
 }
 .topbutton a{
     color: #394B5A;
