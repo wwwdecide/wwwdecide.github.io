@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    font-family: 'Open Sans',sans-serif;
+    background: #ddd;
+}
+li{
+    list-style: none;
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+header, section {
+    width: 100%;
+    margin: 0 auto;
+    background: #ddd;
+}
